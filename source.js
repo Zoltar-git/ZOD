@@ -60,7 +60,6 @@ ZOD = {
 		return keyFound;
 	}
 }
-}
 ig.game.player = ZOD.object(ig.game,'rank'),ig.game.player.changeName = ZOD.function(ig.game.player,'screenName=a'),ig.game.item = ZOD.proto(ig.game,'removeItemFromCollection'),ig.game.item.equip = ZOD.function(ig.game.item,'AnimationSheet(null,d'),ig.game.players = ZOD.object(ig.game,'ui').player,sockets = ZOD.object(ig.game,'ws'),sockets.dict = ZOD.object(sockets,'WSLIMIT')
 
 //parses code
@@ -79,6 +78,6 @@ const idFromScreenName = screenName => {
 }
 //also parses
 const updatePlayers = () => {
-	ig.game.players = ZOD.object(ig.game, "betweenDefaultAndPlayer").player;
+	ig.game.players = ZOD.object(ig.game, 'ui').player;
 }
 
